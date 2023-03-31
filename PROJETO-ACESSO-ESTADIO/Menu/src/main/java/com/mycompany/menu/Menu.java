@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Menu {
 
     public static void main(String[] args) {
+        Bilheteria vender = new Bilheteria();
         for(int i=0; i<3;i++){
         System.out.println("Bem viando ao U.P. STADIUM\n");
         System.out.println("Por favor digite a opção que você deseja: \n");
@@ -42,6 +43,7 @@ public class Menu {
             case "1":
                 System.out.println("SUA ESCOLHA FOI: "+Bilheteria);
                 i=4;
+                vender.venderIngressos(130.58,150.29,850.69);
                 break;
             case "2":
                 System.out.println("SUA ESCOLHA FOI: " + Pessoa);
@@ -53,6 +55,7 @@ public class Menu {
                 break;
             case "4":
                 System.out.println("SUA ESCOLHA FOI: " + Juiz);
+                
                 i=4;
                 break;
             case "5":
