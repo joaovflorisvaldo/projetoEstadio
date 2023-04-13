@@ -5,7 +5,7 @@
 package com.mycompany.projeto.acesso.estadio;
 
 /**
- *
+ ***
  * @author Renan
  */
 public class Torcedor {

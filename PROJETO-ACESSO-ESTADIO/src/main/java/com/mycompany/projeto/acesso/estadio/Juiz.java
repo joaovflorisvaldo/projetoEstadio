@@ -7,7 +7,7 @@ package com.mycompany.projeto.acesso.estadio;
 import java.util.Scanner;
 
 /**
- *
+ ***
  * @author lucas
  */
 public class Juiz {
