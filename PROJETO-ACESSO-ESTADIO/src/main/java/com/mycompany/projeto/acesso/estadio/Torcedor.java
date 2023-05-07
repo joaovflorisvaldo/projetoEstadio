@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.projeto.acesso.estadio;
 
-/**
- ***
- * @author Renan
+/*
+* @author Renan
  */
 public class Torcedor {
+
     public Pessoa idPessoa;
     public String nome;
     public int cpf;
@@ -29,7 +25,4 @@ public class Torcedor {
     public void irAoEstadio() {
         System.out.println("foiAoEstadio");
     }
-
-
-
 }
