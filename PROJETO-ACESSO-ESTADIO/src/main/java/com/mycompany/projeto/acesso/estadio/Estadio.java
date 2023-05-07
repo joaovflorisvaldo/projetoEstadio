@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.projeto.acesso.estadio;
 
-/**
- ***
+/*
  * @author Roney
  */
 public class Estadio {
+
     private int idEstadio;
     private String nomeEstadio;
     private String localizacao;
@@ -19,8 +15,7 @@ public class Estadio {
     private boolean coberto;
     private String timeCasa;
 
-    public Estadio(int idEstadio, String nomeEstadio, String localizacao, int capacidade, int horarioAberturaPortoes,
-                   int horarioFuncionamento, String cidadeEstadio, boolean coberto, String timeCasa) {
+    public Estadio(int idEstadio, String nomeEstadio, String localizacao, int capacidade, int horarioAberturaPortoes, int horarioFuncionamento, String cidadeEstadio, boolean coberto, String timeCasa) {
         this.idEstadio = idEstadio;
         this.nomeEstadio = nomeEstadio;
         this.localizacao = localizacao;
@@ -31,6 +26,7 @@ public class Estadio {
         this.coberto = coberto;
         this.timeCasa = timeCasa;
     }
+
     public static void main(String[] args) {
         Estadio estadio1 = new Estadio(1, "Neo Química Arena", "Distrito de Itaquera", 49000, 14, 16, "São Paulo", true, "Corinthians");
         System.out.println("Nome do Estádio: " + estadio1.getNomeEstadio());
@@ -41,8 +37,8 @@ public class Estadio {
         System.out.println("Cidade do Estádio: " + estadio1.getCidadeEstadio());
         System.out.println("Está coberto? " + estadio1.isCoberto());
         System.out.println("Time da casa: " + estadio1.getTimeCasa());
-        
-        Estadio estadio2 = new Estadio (2, "Olímpico Regional Arnaldo Busatto", "Bairro Santa Cruz", 25000, 14, 16, "Cascavel", false, "F.C Cascavel");
+
+        Estadio estadio2 = new Estadio(2, "Olímpico Regional Arnaldo Busatto", "Bairro Santa Cruz", 25000, 14, 16, "Cascavel", false, "F.C Cascavel");
         System.out.println("Nome do Estádio: " + estadio2.getNomeEstadio());
         System.out.println("Localização: " + estadio2.getLocalizacao());
         System.out.println("Capacidade: " + estadio2.getCapacidade());
@@ -50,7 +46,7 @@ public class Estadio {
         System.out.println("Horário de funcionamento: " + estadio2.getHorarioFuncionamento());
         System.out.println("Cidade do Estádio: " + estadio2.getCidadeEstadio());
         System.out.println("Está coberto? " + estadio2.isCoberto());
-        System.out.println("Time da casa: " + estadio2.getTimeCasa());       
+        System.out.println("Time da casa: " + estadio2.getTimeCasa());
     }
 
     public int getIdEstadio() {
