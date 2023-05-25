@@ -1,22 +1,45 @@
 package com.mycompany.projeto.acesso.estadio;
-import java.util.Calendar;
-import java.util.Scanner;
-import java.text.SimpleDateFormat;
-/*
- * @author Roney
- */
-public class Acesso {
-    private String quemAcessa;
-    private Calendar diaAcesso;
-    private int horaAcesso;
-    private String nome;
-    private String cpf;
-    private Calendar nascimento;
-    private int idPessoa;
-    private TipoIngresso tipoIngresso;
-    private boolean acessoPermitido;
 
-    public static void main(String[] args) {
+public class Acesso extends Bilheteria{
+
+    private int acessoInteiras;
+    private int acessoMeiaEntrada;
+    private int acessoVip;
+    
+    public Acesso(int acessoInteiras, int acessoMeiaEntrada, int acessoVip, int totalDisponiveis, int inteirasVendidas, int meiaEntradasVendidas, int vipVendidas, int entradasVendidas, double valorInteira, double valorMeiaEntrada, double valorVip, double valorTotal) {
+        super(totalDisponiveis, inteirasVendidas, meiaEntradasVendidas, vipVendidas, entradasVendidas, valorInteira, valorMeiaEntrada, valorVip, valorTotal);
+        this.acessoInteiras = acessoInteiras;
+        this.acessoMeiaEntrada = acessoMeiaEntrada;
+        this.acessoVip = acessoVip;
+    }
+
+    public int getAcessoInteiras() {
+        return acessoInteiras;
+    }
+
+    public void setAcessoInteiras(int acessoInteiras) {
+        this.acessoInteiras = acessoInteiras;
+    }
+
+    public int getAcessoMeiaEntrada() {
+        return acessoMeiaEntrada;
+    }
+
+    public void setAcessoMeiaEntrada(int acessoMeiaEntrada) {
+        this.acessoMeiaEntrada = acessoMeiaEntrada;
+    }
+
+    public int getAcessoVip() {
+        return acessoVip;
+    }
+
+    public void setAcessoVip(int acessoVip) {
+        this.acessoVip = acessoVip;
+    }
+    
+}
+    
+    /*public static void main(String[] args) {
         Scanner n = new Scanner(System.in);
         Acesso acesso = new Acesso();
         Calendar horaAtual = Calendar.getInstance();
@@ -139,6 +162,5 @@ public enum TipoIngresso {
 public TipoIngresso getTipoIngresso() {
         return tipoIngresso;
 }
+*/
 
-    
-}
