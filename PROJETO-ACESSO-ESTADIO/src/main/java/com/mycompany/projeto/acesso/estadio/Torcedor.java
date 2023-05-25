@@ -1,28 +1,26 @@
 package com.mycompany.projeto.acesso.estadio;
 
-/*
-* @author Renan
- */
-public class Torcedor {
-
-    public Pessoa idPessoa;
-    public String nome;
-    public int cpf;
-    public int idade;
-    public boolean sexo;
-    public String endereco;
+public class Torcedor extends Pessoa {
+    
+    
+    public Torcedor(String nome, String cpf, String endereco, String telefone, String dataNascimento) {
+        super(nome, cpf, endereco, telefone, dataNascimento);
+    }  
     public boolean socioTorcedor;
-
-    public void comprarIngresso() {
-        System.out.println("Comprou Ingresso");
+    
+    public static void main (String[] args ){
+    
+       Torcedor torcedor1 = new Torcedor  ("paulo", "99966655545", "Rua sao Paulo", "45999875465","17/05/2000");
+        System.out.println("Nome; "+ torcedor1.nome);
+        System.out.println("CPF; "+ torcedor1.getCpf());
+        System.out.println("Telefone; "+ torcedor1.getTelefone());
+   
     }
-
-    public void comprarAlimento() {
-        System.out.println("comprou alimento");
-
-    }
-
-    public void irAoEstadio() {
-        System.out.println("foiAoEstadio");
-    }
+    
+ 
 }
+    
+            
+    
+
+
