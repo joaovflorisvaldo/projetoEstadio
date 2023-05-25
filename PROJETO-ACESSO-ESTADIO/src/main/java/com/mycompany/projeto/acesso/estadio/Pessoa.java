@@ -1,34 +1,19 @@
 package com.mycompany.projeto.acesso.estadio;
 
-import java.time.LocalDate;
-import java.util.Date;
-
-/*
-* @author Alexsander
-*/
 public class Pessoa {
-
-    private int idPessoa;
-    private String nome;
+    
+    public String nome;
     private String cpf;
     private String endereco;
     private String telefone;
-    private Date dataNascimento;
+    private String dataNascimento;
 
-    public int getId() {
-        return idPessoa;
-    }
-
-    public void setId(int id) {
-        this.idPessoa = id;
-    }
-
-    public String getNomeCompleto() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNomeCompleto(String nomeCompleto) {
-        this.nome = nomeCompleto;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCpf() {
@@ -55,12 +40,20 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
-    public LocalDate getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(LocalDate dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
+    public Pessoa(String nome, String cpf, String endereco, String telefone, String dataNascimento) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.dataNascimento = dataNascimento;
+    }
+    
 }
