@@ -10,9 +10,7 @@ public class Menu {
     public static void main(String[] args) {
         
         int escolha;
-        
-        Acesso acesso = new Acesso();
-        Bilheteria bilheteria = new Bilheteria();
+
         Pessoa pessoa = new Pessoa("João", "123.456.789-00", "Rua A, 123", "9999-9999", "01/01/2000");
         
         Scanner ler = new Scanner(System.in);
@@ -29,6 +27,7 @@ public class Menu {
 
             escolha = ler.nextInt();
 
+            String Bilheteria = "BILHETERIA";
             String Pessoa = "PESSOA";
             String Juiz = "JUIZ";
             String Torcedor = "TORCEDOR";
@@ -37,13 +36,18 @@ public class Menu {
             String Jogo = "JOGO";
             String Vendedor = "VENDEDOR";
             String Funcionario = "FUNCIONARIO";
+            String Acesso = "ACESSO";
 
 
             switch (escolha) {
                 case 1:
+                    System.out.println("\nSUA ESCOLHA FOI: " + Bilheteria);
+                    Bilheteria bilheteria = new Bilheteria();
                     bilheteria.menuBilheteria();
                     break;
                 case 2:
+                    System.out.println("\nSUA ESCOLHA FOI: " + Pessoa);
+                    Pessoa pessoa = new Pessoa("João", "123.456.789-00", "Rua A, 123", "9999-9999", "01/01/2000");
                     pessoa.mostrar();
                     break;
                 case 3:
@@ -70,6 +74,8 @@ public class Menu {
                     System.out.println("\nSUA ESCOLHA FOI: " + Funcionario);
                     break; 
                 case 10:
+                    System.out.println("\nSUA ESCOLHA FOI: " + Acesso);
+                    Acesso acesso = new Acesso();
                     acesso.validarAcesso();
                     break;
                 case 0:
