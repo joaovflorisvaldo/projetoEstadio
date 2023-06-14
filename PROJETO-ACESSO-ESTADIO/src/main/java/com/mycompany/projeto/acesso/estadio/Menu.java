@@ -13,6 +13,7 @@ public class Menu {
         
         Acesso acesso = new Acesso();
         Bilheteria bilheteria = new Bilheteria();
+        Pessoa pessoa = new Pessoa("João", "123.456.789-00", "Rua A, 123", "9999-9999", "01/01/2000");
         
         Scanner ler = new Scanner(System.in);
         
@@ -43,7 +44,7 @@ public class Menu {
                     bilheteria.menuBilheteria();
                     break;
                 case 2:
-                    System.out.println("\nSUA ESCOLHA FOI: " + Pessoa);
+                    pessoa.mostrar();
                     break;
                 case 3:
                     System.out.println("\nSUA ESCOLHA FOI: " + Juiz);
