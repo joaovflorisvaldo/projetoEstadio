@@ -4,18 +4,27 @@ public class Jogo {
 
     private int idJogo;
     private String diaJogo;
-    private int horarioJogo;
+    private String horarioJogo;
     private String nomeTime1;
     private String nomeTime2;
     private String nomeCampeonato;
 
-    public Jogo(int idJogo, String diaJogo, int horarioJogo, String nomeTime1, String nomeTime2, String nomeCampeonato) {
+    public Jogo(int idJogo, String diaJogo, String horarioJogo, String nomeTime1, String nomeTime2, String nomeCampeonato) {
         this.idJogo = idJogo;
         this.diaJogo = diaJogo;
         this.horarioJogo = horarioJogo;
         this.nomeTime1 = nomeTime1;
         this.nomeTime2 = nomeTime2;
         this.nomeCampeonato = nomeCampeonato;
+    }
+
+    public void informacoes(){
+        System.out.println("O dia do jogo vai ser: " + this.getDiaJogo());
+        System.out.println("O horário do jogo vai ser as: " + this.getHorarioJogo());
+        System.out.println("O nome do time da casa é: " + this.getNomeTime1());
+        System.out.println("O nome do time adversário é: " + this.getNomeTime2());
+        System.out.println("O campeonato que está acontecendo é o: " + this.getNomeCampeonato());
+       
     }
 
     public int getIdJogo() {
@@ -34,11 +43,11 @@ public class Jogo {
         this.diaJogo = diaJogo;
     }
 
-    public int getHorarioJogo() {
+    public String getHorarioJogo() {
         return horarioJogo;
     }
 
-    public void setHorarioJogo(int horarioJogo) {
+    public void setHorarioJogo(String horarioJogo) {
         this.horarioJogo = horarioJogo;
     }
 
@@ -65,5 +74,5 @@ public class Jogo {
     public void setNomeCampeonato(String nomeCampeonato) {
         this.nomeCampeonato = nomeCampeonato;
     }
-    
+
 }
