@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Acesso{
 
-    private int entrada;
+    public int entrada;
     
     public void validarAcesso(){
         
