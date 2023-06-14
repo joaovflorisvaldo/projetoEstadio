@@ -1,3 +1,5 @@
+//Quem fez essa classe foi o Ricardo, mas como ele não tinha acesso quem fez o commit foi eu.
+
 package com.mycompany.projeto.acesso.estadio;
 
 import java.util.Scanner;
