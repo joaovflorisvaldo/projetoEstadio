@@ -10,7 +10,9 @@ public class Menu {
     public static void main(String[] args) {
         
         int escolha;
-
+        
+        Acesso acesso = new Acesso();
+        Bilheteria bilheteria = new Bilheteria();
         Scanner ler = new Scanner(System.in);
         
         do {
@@ -24,7 +26,7 @@ public class Menu {
             System.out.println("[0]   SAIR");
 
             escolha = ler.nextInt();
-
+          
             String Bilheteria = "BILHETERIA";
             String Pessoa = "PESSOA";
             String Juiz = "JUIZ";
@@ -35,7 +37,6 @@ public class Menu {
             String Vendedor = "VENDEDOR";
             String Funcionario = "FUNCIONARIO";
             String Acesso = "ACESSO";
-
 
             switch (escolha) {
                 case 1:
@@ -58,8 +59,7 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("\nSUA ESCOLHA FOI: " + Estadio);
-                    Estadio estadio = new Estadio(1, "Neo Quimica Arena", "Distrito de Itaquera", 
-                            49000, 14, 16, "São Paulo");
+                    Estadio estadio = new Estadio(1, "Neo Quimica Arena", "Distrito de Itaquera", 49000, 14, 16, "São Paulo");
                     estadio.mostrar();
                     break;
                 case 6:
@@ -67,8 +67,7 @@ public class Menu {
                     break;
                 case 7:
                     System.out.println("\nSUA ESCOLHA FOI: " + Jogo);
-                    Jogo jogo = new Jogo(1, "15 de Agosto", "12 horas",
-                        "Corinthias", "Flamengo", "Brasileirão");
+                    Jogo jogo = new Jogo(1, "15 de Agosto", "12 horas", "Corinthias", "Flamengo", "Brasileirão");
                     jogo.informacoes();
                     break;
                 case 8:

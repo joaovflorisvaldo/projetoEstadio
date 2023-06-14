@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Acesso{
 
-    public int entrada;
+    private int entrada;
     
     public void validarAcesso(){
         
@@ -21,4 +21,4 @@ public class Acesso{
             }
         }while(false);
     }  
-}   
+}

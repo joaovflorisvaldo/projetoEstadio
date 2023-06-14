@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Bilheteria {
     
     Scanner ler = new Scanner(System.in);
-    
+   
     private int totalDisponiveis = 1000;
     private int inteirasVendidas = 512;
     private int meiaEntradasVendidas = 256;
