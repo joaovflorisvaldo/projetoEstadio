@@ -11,8 +11,6 @@ public class Menu {
         
         int escolha;
 
-        Pessoa pessoa = new Pessoa("João", "123.456.789-00", "Rua A, 123", "9999-9999", "01/01/2000");
-        
         Scanner ler = new Scanner(System.in);
         
         do {
@@ -60,12 +58,18 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("\nSUA ESCOLHA FOI: " + Estadio);
+                    Estadio estadio = new Estadio(1, "Neo Quimica Arena", "Distrito de Itaquera", 
+                            49000, 14, 16, "São Paulo");
+                    estadio.mostrar();
                     break;
                 case 6:
                     System.out.println("\nSUA ESCOLHA FOI: " + Time);
                     break;
                 case 7:
                     System.out.println("\nSUA ESCOLHA FOI: " + Jogo);
+                    Jogo jogo = new Jogo(1, "15 de Agosto", "12 horas",
+                        "Corinthias", "Flamengo", "Brasileirão");
+                    jogo.informacoes();
                     break;
                 case 8:
                     System.out.println("\nSUA ESCOLHA FOI: " + Vendedor);
