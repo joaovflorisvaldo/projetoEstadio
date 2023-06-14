@@ -20,10 +20,5 @@ public class Acesso{
                 System.out.println("\nENTRADA NEGADA, TENTE NOVAMENTE!");
             }
         }while(false);
-    }
-    
+    }  
 }
-
-    
-
-

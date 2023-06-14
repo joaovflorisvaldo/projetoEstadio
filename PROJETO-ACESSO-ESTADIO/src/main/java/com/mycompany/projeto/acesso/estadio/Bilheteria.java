@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class Bilheteria {
     
     Scanner ler = new Scanner(System.in);
-    
-    private int totalDisponiveis;
-    private int inteirasVendidas;
-    private int meiaEntradasVendidas;
-    private int vipVendidas;
+   
+    private int totalDisponiveis = 1000;
+    private int inteirasVendidas = 512;
+    private int meiaEntradasVendidas = 256;
+    private int vipVendidas = 210;
     private int codigoEntrada;
     public int entradasVendidas;
-    public double valorInteira;
-    public double valorMeiaEntrada;
-    public double valorVip;
+    public double valorInteira = 40.0;
+    public double valorMeiaEntrada = 20.0;
+    public double valorVip = 55.0;
     public double valorTotal;
 
     public int getTotalDisponiveis() {

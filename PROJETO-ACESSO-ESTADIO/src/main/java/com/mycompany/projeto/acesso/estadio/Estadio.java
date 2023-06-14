@@ -1,40 +1,35 @@
 package com.mycompany.projeto.acesso.estadio;
 
-public class Estadio extends Jogo {
+public class Estadio {
 
-    public static void main(String[] args) {
-        Estadio estadio1 = new Estadio(1, "Neo Química Arena", "Distrito de Itaquera", 49000, 14, 16, "São Paulo", 1, "10/06/2023", 20, "Santos", "Corinthians", "Copa do Brasil");
-        System.out.println("Localização: " + estadio1.nomeEstadio);
-        System.out.println("Capacidade: " + estadio1.localizacao);
-        System.out.println("Horário de funcionamento: " + estadio1.capacidade);
-        System.out.println("Time da Casa: " + estadio1.getNomeTime1());    
-        System.out.println("Time Visitante: " + estadio1.getNomeTime2());    
-        System.out.println("Campeonato: " + estadio1.getNomeCampeonato());    
-        System.out.println("Dia do jogo: " + estadio1.getDiaJogo());
-        System.out.println("Horário do jogo: " + estadio1.getHorarioJogo());
-    }
-    
-        private int idEstadio;
+    private int idEstadio;
         private String nomeEstadio;
         private String localizacao;
         private int capacidade;
-        private int horarioAberturaPotoes;
+        private int horarioAberturaPortoes;
         private int horarioFuncionamento;
         private String cidadeEstadio;
-            
-        
-    public Estadio(int idEstadio, String nomeEstadio, String localizacao, int capacidade, int horarioAberturaPotoes, int horarioFuncionamento, String cidadeEstadio, int idJogo, String diaJogo, int horarioJogo, String nomeTime1, String nomeTime2, String nomeCampeonato) {
-        super(idJogo, diaJogo, horarioJogo, nomeTime1, nomeTime2, nomeCampeonato);
+
+    public Estadio(int idEstadio, String nomeEstadio, String localizacao, int capacidade, int horarioAberturaPortoes, int horarioFuncionamento, String cidadeEstadio) {
         this.idEstadio = idEstadio;
         this.nomeEstadio = nomeEstadio;
         this.localizacao = localizacao;
         this.capacidade = capacidade;
-        this.horarioAberturaPotoes = horarioAberturaPotoes;
+        this.horarioAberturaPortoes = horarioAberturaPortoes;
         this.horarioFuncionamento = horarioFuncionamento;
         this.cidadeEstadio = cidadeEstadio;
-
     }
-
+    
+    
+    
+    public void mostrar(){
+        System.out.println("Nome do Estadio: " + this.getNomeEstadio());
+        System.out.println("Localização: " + this.getLocalizacao());
+        System.out.println("Capacidade: " + this.getCapacidade());
+        System.out.println("Abertura: " + this.getHorarioAberturaPortoes() + " horas");
+        System.out.println("Horário de funcionamento: " + this.getHorarioFuncionamento() + " horas");
+        System.out.println("Cidade do estádio: " + this.getCidadeEstadio());
+    }
 
     public int getIdEstadio() {
         return idEstadio;
@@ -68,12 +63,12 @@ public class Estadio extends Jogo {
         this.capacidade = capacidade;
     }
 
-    public int getHorarioAberturaPotoes() {
-        return horarioAberturaPotoes;
+    public int getHorarioAberturaPortoes() {
+        return horarioAberturaPortoes;
     }
 
-    public void setHorarioAberturaPotoes(int horarioAberturaPotoes) {
-        this.horarioAberturaPotoes = horarioAberturaPotoes;
+    public void setHorarioAberturaPortoes(int horarioAberturaPortoes) {
+        this.horarioAberturaPortoes = horarioAberturaPortoes;
     }
 
     public int getHorarioFuncionamento() {
@@ -91,4 +86,10 @@ public class Estadio extends Jogo {
     public void setCidadeEstadio(String cidadeEstadio) {
         this.cidadeEstadio = cidadeEstadio;
     }
-}
+
+   
+       
+    }
+
+
+  
