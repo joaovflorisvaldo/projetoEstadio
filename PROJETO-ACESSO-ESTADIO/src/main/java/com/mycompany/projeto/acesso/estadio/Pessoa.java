@@ -1,53 +1,15 @@
 package com.mycompany.projeto.acesso.estadio;
 
+import java.util.Scanner;
+
 public class Pessoa {
-    
-    public String nome;
+    private String nome;
     private String cpf;
     private String endereco;
     private String telefone;
     private String dataNascimento;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
+    // Construtor da classe Pessoa
     public Pessoa(String nome, String cpf, String endereco, String telefone, String dataNascimento) {
         this.nome = nome;
         this.cpf = cpf;
@@ -55,5 +17,34 @@ public class Pessoa {
         this.telefone = telefone;
         this.dataNascimento = dataNascimento;
     }
+
+    public void mostrar(){
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("CPF: " + this.getCpf());
+        System.out.println("Endereço: " + this.getEndereco());
+        System.out.println("Telefone: " + this.getTelefone());
+        System.out.println("Data de Nascimento: " + this.getDataNascimento());
+    }
+    // Métodos getters para acessar os atributos
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+    
     
 }
