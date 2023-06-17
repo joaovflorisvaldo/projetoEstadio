@@ -11,8 +11,6 @@ public class Menu {
         
         int escolha;
         
-        Acesso acesso = new Acesso();
-        Bilheteria bilheteria = new Bilheteria();
         Scanner ler = new Scanner(System.in);
         
         do {
@@ -41,7 +39,7 @@ public class Menu {
             switch (escolha) {
                 case 1:
                     System.out.println("\nSUA ESCOLHA FOI: " + Bilheteria);
-                    Bilheteria bilheteria = new Bilheteria();
+                    BilheteriaMenu bilheteria = new BilheteriaMenu();
                     bilheteria.menuBilheteria();
                     break;
                 case 2:
